@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        display: grid;
+        height: 500px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        /* justify-items과 align-items속성을 통해 자식들의 위치를 개별적으로 이동시킬 수 있다. (기본 값은 stretch이다.) */
+        /* 두 개의 속성을 합해서 place-items로 쓸 수 있다. */
+        /* place-items는 첫 번째 값으로 수직(y축), 두 번째 값으론 수평(x축)을 쓴다.  */
+        justify-items: stretch;
+        align-items: stretch;
+      }
+      .header {
+        background-color: crimson;
+      }
+      .content {
+        background-color: dodgerblue;
+      }
+      .nav {
+        background-color: yellowgreen;
+      }
+      .footer {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="header">header</div>
+      <div class="content">content</div>
+      <div class="nav">nav</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
