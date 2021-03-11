@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /* margin: 0; */
+      }
+      .grid {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(4, 100px);
+      }
+      .header {
+        background-color: crimson;
+        /* grid-column은 grid-column-start와 grid-column-end의 축약형이다. */
+        /* grid-column: 1/5; 시작(1)과 끝점(5)을 입력해주면 시작점과 끝점의 영역을 가지게 된다. */
+        /* 맨 마지막 끝점은 5같이 직접 숫자를 세서 적는 대신 -1로도 적을 수 있다. (ex: grid-column: 1/-1)  */
+        /* 시작점은 1부터 시작하고 끝점은 -1부터 시작해서 -1, -2, -3으로 셀 수 있다. */
+        grid-column: 1/-1;
+      }
+      .content {
+        background-color: dodgerblue;
+        /* grid-column: 1/4; */
+        grid-column: 1/-2;
+        /* grid-row: 2/4; */
+        /* grid-row: 2/-2; */
+        /* grid-row: 2 / span 2를 이용하면 몇 번째 줄에서 시작할지 시작점을 정하고 그 뒤에는 셀 갯수를 지정할 수 있다. */
+        /* 즉 위의 의미는 2번째 줄에서 시작해서 셀 2개를 영역으로 차지하라는 의미이다. */
+        grid-row: 2 / span 2;
+      }
+      .nav {
+        background-color: yellowgreen;
+        /* grid-row: 2/4; */
+        grid-row: span 2;
+      }
+      .footer {
+        background-color: peru;
+        /* grid-column: 1/5; */
+        /* grid-column: 1/5; 에서 더 축약형인 span을 쓸 수도 있다. */
+        /* span은 얼마나 많은 cell을 가질 것인지 정의해주면 된다. 여기서 cell은 grid에서 박스 하나하나를 말한다. */
+        /* 그래서 span은 grid-column처럼 "1에서 시작해서 5에서 끝내" 대신에 "셀 4개를 가져" 라고 하면 된다. */
+        grid-column: span 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="header">header</div>
+      <div class="content">content</div>
+      <div class="nav">nav</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
