@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        border: 5px solid red;
+        display: grid;
+        height: 800px;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(1, 100px);
+        /* justify-content와 align-content는 전체 그리드를 움직이는 방법이다. (flex에도 있는 속성들이다.) */
+        /* 두 개의 축약형으로는 place-content가 있다. (첫 번째는 수직, 두 번째는 수평 속성을 사용함) */
+        /* justify-content: space-between; */
+        align-content: end;
+      }
+      .header {
+        background-color: crimson;
+      }
+      .content {
+        background-color: dodgerblue;
+      }
+      .nav {
+        background-color: yellowgreen;
+      }
+      .footer {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="header">header</div>
+      <div class="content">content</div>
+      <div class="nav">nav</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
