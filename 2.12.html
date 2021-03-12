@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .auto-fill {
+        display: grid;
+        gap: 3px;
+        /* auto-fill은 태그의 크기를 늘리지 않고 가능한 많은 컬럼들을 생성해서 빈 테이블을 생성한다. */
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      }
+      .auto-fit {
+        display: grid;
+        gap: 3px;
+        /* auto-fit은 태그를 유동적으로 늘려서 테이블이 화면에 꽉 차도록 설정한다. */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      }
+      .auto-fill div {
+        background-color: crimson;
+      }
+      .auto-fit div {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>auto-fill</h2>
+    <div class="auto-fill">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    <h2>auto-fit</h2>
+    <div class="auto-fit">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>
