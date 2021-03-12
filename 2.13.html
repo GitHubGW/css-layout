@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        display: grid;
+        gap: 3px;
+        /* max-content는 해당 컨텐츠가 가질 수 있는 최대로 크기를 설정한다. */
+        /* min-content는 해당 컨텐츠가 가질 수 있는 최소의 크기로 설정한다. */
+        grid-template-columns: repeat(5, minmax(max-content, 1fr));
+      }
+      .grid div {
+        background-color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+      <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="item">Lorem ipsum dolor.</div>
+      <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi?</div>
+      <div class="item">Lorem ipsum dolor sit amet consectetur.</div>
+    </div>
+  </body>
+</html>
