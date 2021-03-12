@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        border: 5px solid red;
+        display: grid;
+        gap: 5px;
+        /* height: 800px; */
+        /* grid-template-columns: repeat(4, 100px); */
+        grid-template-rows: repeat(1, 100px);
+        grid-template-columns: repeat(4, 100px);
+
+        /* grid-auto-rows는 설정해놓은 grid 테이블보다 추가적으로 생성되는 박스들의 크기를 자동으로 할당해준다. */
+        /* grid-auto-rows: 100px; */
+
+        /* grid-auto-flow를 이용하면 태그가 생성되는 방향을 설정할 수 있다. (flex의 flex-direction과 비슷하다.) */
+        /* 중요! grid-auto-flow로 만약 row->column으로 뒤집게 되면 row, column으로 설정했던 속성들의 특성도 모두 반대로 바뀌게 된다.  */
+        grid-auto-flow: column;
+        grid-auto-columns: 100px;
+      }
+      .header {
+        background-color: crimson;
+        /* align-self는 하나의 태그에만 개별적으로 적용되는 속성이다. */
+        /* 두 개의 축약형인 place-self도 있다.  */
+        /* align-self: center; */
+        /* justify-self: center; */
+      }
+      .item:nth-child(odd) {
+        background-color: yellowgreen;
+      }
+      .item:nth-child(even) {
+        background-color: dodgerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+      <div class="item">19</div>
+      <div class="item">20</div>
+      <div class="item">21</div>
+      <div class="item">22</div>
+      <div class="item">23</div>
+      <div class="item">24</div>
+      <div class="item">25</div>
+      <div class="item">26</div>
+      <div class="item">27</div>
+      <div class="item">28</div>
+      <div class="item">29</div>
+      <div class="item">30</div>
+      <div class="item">31</div>
+      <div class="item">32</div>
+      <div class="item">33</div>
+      <div class="item">34</div>
+      <div class="item">35</div>
+      <div class="item">36</div>
+      <div class="item">37</div>
+      <div class="item">38</div>
+      <div class="item">39</div>
+      <div class="item">40</div>
+      <div class="item">41</div>
+      <div class="item">42</div>
+      <div class="item">43</div>
+      <div class="item">44</div>
+      <div class="item">45</div>
+      <div class="item">46</div>
+      <div class="item">47</div>
+      <div class="item">48</div>
+      <div class="item">49</div>
+      <div class="item">50</div>
+    </div>
+  </body>
+</html>
