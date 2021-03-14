@@ -1,0 +1,5 @@
+// 여기 scss에서 작성한 것들은 컴파일을 통해 일반적인 css로 바꿔서 사용되게 된다. 
+// scss로 작업할 때는 console.log를 키고 하는 것이 좋다. (이유는 gulp가 발생하는 에러를 실시간으로 알려준다.)
+body{
+  background-color: dodgerblue;
+}
