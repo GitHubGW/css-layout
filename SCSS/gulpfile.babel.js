@@ -6,6 +6,7 @@ import autoprefixer from "gulp-autoprefixer";
 
 sass.compiler = require("node-sass");
 
+// 모든 경로들을 담은 routes객체를 생성하고 여기서 모든 경로들을 컨트롤 한다.
 const routes = {
   // 현재 이 gulp파일은 기본적으로 아래 src속성에 있는 해당 경로의 디렉토리 파일을 관찰하고 있다.
   // 그래서 해당 파일에서 짜여진 코드는 일반 CSS로 컴파일 되는 것이다. (해당 파일이 프로세스(진행. 과정)의 첫 단계인 것이다.)
