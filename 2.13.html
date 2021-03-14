@@ -9,8 +9,8 @@
       .grid {
         display: grid;
         gap: 3px;
-        /* max-content는 해당 컨텐츠가 가질 수 있는 최대로 크기를 설정한다. */
-        /* min-content는 해당 컨텐츠가 가질 수 있는 최소의 크기로 설정한다. */
+        /* max-content는 해당 컨텐츠가 가질 수 있는 최대로 크기를 설정한다.(max-content는 가로의 길이를 기준으로 크기를 잡는다.) */
+        /* min-content는 해당 컨텐츠가 가질 수 있는 최소의 크기로 설정한다.(min-content는 세로의 길이를 기준으로 크기를 잡는다.) */
         grid-template-columns: repeat(5, minmax(max-content, 1fr));
       }
       .grid div {
