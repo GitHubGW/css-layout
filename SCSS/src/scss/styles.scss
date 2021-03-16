@@ -1,5 +1,12 @@
-// 여기 scss에서 작성한 것들은 컴파일을 통해 일반적인 css로 바꿔서 사용되게 된다. 
-// scss로 작업할 때는 console.log를 키고 하는 것이 좋다. (이유는 gulp가 발생하는 에러를 실시간으로 알려준다.)
+// _variables.scss를 사용하기 위해서는 import해줘야 한다. 
+@import "_variables";
+
+// 여기 scss파일에서 작성한 내용들은 gulp가 컴파일을 해줘서 일반 css로 바꿔서 사용되게 된다. 
+// scss로 작업할 때는 console.log(터미널)를 키고 하는 것이 좋다. (이유는 gulp가 작업하면서 발생하는 에러를 실시간으로 알려주기 때문이다.)
 body{
-  background-color: dodgerblue;
+  background-color: $bg;
+}
+h1{
+  color: $color;
+  font-size: $titleSize;
 }

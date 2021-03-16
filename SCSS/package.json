@@ -19,5 +19,4 @@
   "scripts": {
     "dev": "gulp dev"
   }
-  
 }
