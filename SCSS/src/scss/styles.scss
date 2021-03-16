@@ -8,5 +8,19 @@ body{
 }
 h1{
   color: $color;
-  font-size: $titleSize;
+  // font-size: $titleSize;
+}
+
+// SCSS에는 Nesting이라는 것이 있는데 이것은 좀 더 명시적으로 아래와 같이 CSS를 만드는 것이다.
+.box{
+  margin-top: 20px;
+  &:hover{
+    color: orange;
+  }h1{
+    color: red;
+  }
+  button{
+    color: red;
+  }
+  
 }
