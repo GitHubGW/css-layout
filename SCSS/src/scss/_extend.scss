@@ -1,0 +1,13 @@
+// extends는 다른 코드를 확장하거나 코드를 재사용하고 싶을 때 사용한다. 
+// 재사용하고 싶은 코드들을 작성 후 아래와 같이 %를 붙여서 정의해준다. 
+%button{
+  border:3px solid red;
+  color: orange; 
+  padding:10px 20px;
+}
+
+%p{
+  font-size:50px;
+  color: pink;
+  font-style: italic;
+}
