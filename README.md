@@ -1,10 +1,10 @@
 # CSS-Layout
 
 ## 🔥 Technologies
-* ### CSS3
-#### Flexbox
-#### Grid
-#### SCSS
+- ⚙ CSS3
+⚙ Flexbox
+⚙ Grid
+⚙ SCSS
 
 ## 1️⃣ Flexbox
 - [x] flex-direction
