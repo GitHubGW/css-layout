@@ -5,25 +5,31 @@
 <img height="30" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" /> <img height="30" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"/> 
 <img height="30" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=Sass&logoColor=white"/>
 
+## ✅ Packages
+- [x] HTML5   
+- [x] CSS3   
+- [x] SCSS    
+- [x] Flexbox  
+- [x] Grid
+
 ## 1️⃣ Flexbox
-- [x] flex-direction
-- [x] order
+- [x] Main Axis / Cross Axis
+- [x] Column and Row
 - [x] justify-content, align-items
 - [x] align-content, align-self
+- [x] wrap, nowrap, reverse, align
 - [x] flex-wrap
 - [x] flex-grow, flex-shrink
 - [x] flex-basis
 
 ## 2️⃣ Grid
-- [x] grid-template-columns, grid-template-rows
-- [x] gap, column-gap, row-gap
-- [x] grid-template-areas, grid-area
-- [x] grid-column-start(end), grid-row-start(end)
-- [x] grid-template, grid-column, grid-row
-- [x] place-items, justify-items, align-items
-- [x] place-content, justify-content, align-content
-- [x] place-self, justify-self, align-self
-- [x] grid-auto-flow, grid-auto-columns, grid-auto-rows
+- [x] template areas
+- [x] rows and columns
+- [x] grid-template
+- [x] place-items
+- [x] auto-columns, auto-rows
+- [x] minmax
+- [x] auto-fill, auto-fit
 
 ### ☑ Keywords & Functions
 - [x] repeat
