@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /* margin: 0; */
+      }
+      .grid {
+        display: grid;
+        gap: 10px;
+        /* 아래와 같이 각각의 라인(줄)에 네이밍(이름)을 줄 수도 있다. (일종의 변수처럼)  */
+        /* 그러면 이제 라인의 이름을 변수처럼 불러와서 쓸 수 있다. */
+        grid-template-columns: [first-line] 100px [second-line] 100px [third-line] 100px [fourth-line] 100px [fifth-line] 100px;
+        /* repeat()을 통해서도 라인의 이름을 한꺼번에 줄 수 있다. */
+        grid-template-rows: repeat(4, [row-line] 100px);
+      }
+      .header {
+        background-color: crimson;
+        /* grid-column: 1/-1;라고 쓴 것을 위에서 선언한 변수 형태로 불러와서 사용했다. */
+        /* grid-column: 1/-1; */
+        grid-column: first-line/fifth-line;
+      }
+      .content {
+        background-color: dodgerblue;
+        grid-column: 1/4;
+        grid-row: row-line 2 / row-line 4;
+      }
+      .nav {
+        background-color: yellowgreen;
+        /* grid-row: 2/4; */
+        grid-row: row-line 2 / row-line 4;
+      }
+      .footer {
+        background-color: orange;
+        grid-column: span 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="header">header</div>
+      <div class="content">content</div>
+      <div class="nav">nav</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
