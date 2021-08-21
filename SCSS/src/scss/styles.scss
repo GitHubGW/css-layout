@@ -1,8 +1,7 @@
-// 해당 파일을 여기서 사용하기 위해서는 import해야 한다. (import해올 때 뒤에 .scss 파일 확장자명은 빼줘야 한다.)
-// _variables.scss와 _mixins.scss파일을 사용하기 위해 import해왔다.
+// 아래 파일들을 styles.scss안에서 사용하기 위해서 import해왔다.
 @import "_variables";
 @import "_mixin";
-@import "_extend.scss";
+@import "_extend";
 
 // 여기 scss파일에서 작성한 내용들은 gulp가 컴파일을 해줘서 일반 css로 바꿔서 사용되게 된다.
 // scss로 작업할 때는 console.log(터미널)를 키고 하는 것이 좋다. (이유는 gulp가 작업하면서 발생하는 에러를 실시간으로 알려주기 때문이다.)
@@ -39,15 +38,7 @@ h2 {
 
   font-style: italic;
 
-  /*
-  &:nth-child(odd){
-    @include handleTitle(red);
-  }
-  &:nth-child(even){
-    @include handleTitle(green);
-  }
-  */
-
+  // @include handleTitle()함수를 가져와서 해당 함수의 인자에 각각 다른 값을 전달해서 각각 다른 스타일을 줄 수 있다.
   // :nth-child()를 주게 되면 우선순위 문제 때문인지 먹지 않아서 nth-of-type을 이용했다.
   /*
   &:nth-of-type(1){
@@ -76,10 +67,12 @@ button {
   // _extend.scss에서 만든 %button을 가져와서 @extend 해주면 해당 코드의 내용들을 가져와서 재사용할 수 있게 된다.
   @extend %button;
 }
+
 button:nth-of-type(1) {
-  @extend %button;
+  // @extend %button;
   color: red;
 }
+
 button:nth-of-type(2) {
   color: blue;
 }

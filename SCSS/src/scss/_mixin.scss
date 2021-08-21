@@ -1,31 +1,29 @@
-// mixin은 일종의 SCSS의 함수라고 볼 수 있다. (함수이기 때문에 다양한 프로그래밍 처리가 가능함!)
-// 코드들을 재사용할 수 있고 파라미터를 받아서 다양한 처리를 할 수 있다.
+// mixin은 일종의 Scss의 함수라고 볼 수 있다. 그래서 함수가 할 수 있는 다양한 프로그래밍 처리가 가능하다.
+// 단순히 자주 쓰는 코드들을 안에 적어서 재사용할 수도 있고, 파라미터를 받아서 다양한 처리를 할 수도 있다.
 // mixin파일 또한 컴파일 되지 않아야 하기 때문에 앞에 _를 붙여준다.
-// 만약 단순히 재사용성만을 위한 목적이라면 extends를 사용하면 된다. 
+// 만약 단순히 재사용성만을 위한 목적이라면 extends를 사용하면 된다.
+// 여기서 만든 mixin함수들을 가져다 쓰려면 해당 파일에서 _mixin.scss를 import해준 후, @include를 통해 가져와야 한다.
 @mixin handleTitle($color) {
   color: $color;
   font-size: 30px;
   text-decoration: underline;
 }
 
-@mixin handleTitle2($word){
+@mixin handleTitle2($word) {
   font-size: 30px;
   text-decoration: line-through;
 
-  // mixin은 프로그래밍 언어처럼 if문을 사용할 수도 있음.
-  // 다시말해 CSS에서 프로그래밍 로직을 짤 수 있는 것이다. 
+  // Scss의 mixin은 일종의 함수이기 때문에 프로그래밍 언어처럼 if문을 사용해서 프로그래밍 로직을 짤 수도 있다.
   // @if 조건 { } @else if 조건 { }
-  @if $word=="odd"{
-    color: crimson;
-  }@else if $word=="even"{
+  @if $word== "odd" {
+    color: pink;
+  } @else if $word== "even" {
     color: yellowgreen;
   }
 }
 
-
-
 // -----------------------------------------
-// 앞에 $를 붙여 재사용이 가능한 변수를 생성함. 
+// 앞에 $를 붙여 재사용이 가능한 변수를 생성함.
 // 생성한 변수는 아래에서 사용됨.
 $minIphone: 500px;
 $maxIphone: 690px;
@@ -34,25 +32,24 @@ $maxTablet: 1120px;
 
 // responsive라는 mixin을 생성함
 @mixin responsive($device) {
-  // 여기 content가 mixin의 content가 된다. 
+  // 여기 content가 mixin의 content가 된다.
   // @content
 
-  @if $device == "iphone"{
-    @media screen and (min-width: $minIphone) and (max-width: $maxIphone){
+  @if $device == "iphone" {
+    @media screen and (min-width: $minIphone) and (max-width: $maxIphone) {
       @content;
     }
-  }@else if $device == "tablt"{
-    @media screen and (min-width: $minTablet) and (max-width: $maxTablet){
+  } @else if $device == "tablt" {
+    @media screen and (min-width: $minTablet) and (max-width: $maxTablet) {
       @content;
     }
-  }@else if $device == "iphone-l"{
-    @media screen and (min-width: $minIphone) and (max-width: $maxIphone) and (orientation: landscape){
+  } @else if $device == "iphone-l" {
+    @media screen and (min-width: $minIphone) and (max-width: $maxIphone) and (orientation: landscape) {
       @content;
     }
-  }@else if $device == "ipad-l"{
-    @media screen and (min-width: $minTablet) and (max-width: $maxTablet) and (orientation: landscape){
+  } @else if $device == "ipad-l" {
+    @media screen and (min-width: $minTablet) and (max-width: $maxTablet) and (orientation: landscape) {
       @content;
     }
   }
-
 }
