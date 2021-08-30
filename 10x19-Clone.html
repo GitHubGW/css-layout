@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 1px solid lightgray;
+        height: 900px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 150px 1fr 150px;
+      }
+      .content {
+        border: 1px solid lightgray;
+      }
+      .content:nth-child(3) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content__parent {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+      }
+      .content__child {
+        border: 1px solid lightgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content__image {
+        background: url("./images/natural.jpeg") no-repeat center center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content"></div>
+      <div class="content"></div>
+      <div class="content">MENU</div>
+      <div class="content content__parent">
+        <div class="content__child">#10</div>
+        <div class="content__child">#9</div>
+        <div class="content__child">#8</div>
+        <div class="content__child">#7</div>
+        <div class="content__child">#6</div>
+      </div>
+      <div class="content content__image"></div>
+      <div class="content content__parent">
+        <div class="content__child">#5</div>
+        <div class="content__child">#4</div>
+        <div class="content__child">#3</div>
+        <div class="content__child">#2</div>
+        <div class="content__child">#1</div>
+      </div>
+      <div class="content"></div>
+      <div class="content"></div>
+      <div class="content"></div>
+    </div>
+  </body>
+</html>
