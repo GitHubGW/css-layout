@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 5px solid lightgray;
+        display: grid;
+        gap: 5px;
+        background-color: lightgray;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+      }
+      .content:nth-child(2n) img {
+        order: 1;
+      }
+      .content img {
+        width: 100%;
+      }
+      .content h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
+        background-color: #fff;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img src="https://picsum.photos/275" alt="" />
+        <h1>#1</h1>
+      </div>
+      <div class="content">
+        <img src="https://picsum.photos/276" alt="" />
+        <h1>#2</h1>
+      </div>
+      <div class="content">
+        <img src="https://picsum.photos/277" alt="" />
+        <h1>#3</h1>
+      </div>
+      <div class="content">
+        <img src="https://picsum.photos/278" alt="" />
+        <h1>#4</h1>
+      </div>
+      <div class="content">
+        <img src="https://picsum.photos/279" alt="" />
+        <h1>#5</h1>
+      </div>
+      <div class="content">
+        <img src="https://picsum.photos/280" alt="" />
+        <h1>#6</h1>
+      </div>
+      <div class="content">
+        <img src="https://picsum.photos/281" alt="" />
+        <h1>#7</h1>
+      </div>
+      <div class="content">
+        <img src="https://picsum.photos/282" alt="" />
+        <h1>#8</h1>
+      </div>
+      <div class="content">
+        <img src="https://picsum.photos/283" alt="" />
+        <h1>#9</h1>
+      </div>
+      <div class="content">
+        <img src="https://picsum.photos/284" alt="" />
+        <h1>#10</h1>
+      </div>
+    </div>
+  </body>
+</html>

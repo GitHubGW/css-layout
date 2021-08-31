@@ -7,143 +7,132 @@
     <title>Document</title>
     <style>
       .container {
-        border: 2px solid lightgray;
+        border: 1px solid lightgray;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(10, 360px);
+        grid-template-columns: repeat(2, 1fr);
       }
       .content {
-        margin-bottom: 50px;
-        border: 2px solid lightgray;
       }
-      .content img {
+      .content__image {
+        font-size: 0;
       }
-      .content h5 {
+      .content__image img {
+        width: 100%;
+      }
+      .content__title {
+        position: sticky;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content__title h1 {
         margin: 0;
+        text-align: center;
+        font-size: 60px;
+        padding: 0 80px;
+      }
+      .title__time {
+        text-align: center;
+        background-color: #efcb56;
+        padding: 150px 300px;
+      }
+      .title__time h1 {
+        font-size: 50px;
+        margin: 0;
+      }
+      .title__time p {
+        font-size: 30px;
+        margin: 0;
+      }
+      .image__products {
+        margin-top: 8px;
+        border: 1px solid lightgray;
+        display: grid;
+        gap: 8px;
+        background-color: plum;
+      }
+      .image__product {
+        display: grid;
+      }
+      .image__product:nth-child(1) {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 400px;
+        gap: 8px;
+      }
+      .image__product:nth-child(2) {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 400px;
+        gap: 8px;
+      }
+      .image__product:nth-child(3) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 400px;
+        gap: 8px;
+      }
+      .image__product img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      .image__product img:hover {
+        filter: blur(10px);
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content1</h5>
+        <div class="content__image">
+          <img src="https://picsum.photos/275" alt="" />
+        </div>
+        <div class="content__image">
+          <img src="https://picsum.photos/276" alt="" />
+        </div>
+        <div class="content__image">
+          <img src="https://picsum.photos/277" alt="" />
+        </div>
+        <div class="content__image">
+          <img src="https://picsum.photos/278" alt="" />
+        </div>
+        <div class="content__image">
+          <img src="https://picsum.photos/279" alt="" />
+        </div>
       </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content2</h5>
+      <div class="content__title">
+        <h1>Eyes rest from an afternoon in the sun. Smooth textures feel cool on bare feet and skin.</h1>
       </div>
-      <div class="content">
+    </div>
+
+    <div class="title__time">
+      <h1>Time for Living</h1>
+      <p>
+        Take time for life’s little moments. Browsing the news as you eat breakfast. Setting the table for hungry guests. Sinking in to your favourite armchair.
+        At Tolv, your daily rituals are at the heart of our design. We make furniture to give you your best day, every day.
+      </p>
+    </div>
+
+    <div class="image__products">
+      <div class="image__product">
         <img src="https://picsum.photos/280" alt="" />
-        <h5>content3</h5>
+        <img src="https://picsum.photos/281" alt="" />
+        <img src="https://picsum.photos/282" alt="" />
       </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content4</h5>
+      <div class="image__product">
+        <img src="https://picsum.photos/283" alt="" />
+        <img src="https://picsum.photos/284" alt="" />
+        <img src="https://picsum.photos/285" alt="" />
       </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content5</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content6</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content7</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content8</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content9</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content10</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content11</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content12</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content13</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content14</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content15</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content16</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content17</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content18</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content19</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content20</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content21</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content22</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content23</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content24</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content25</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content26</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content27</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content28</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content29</h5>
-      </div>
-      <div class="content">
-        <img src="https://picsum.photos/280" alt="" />
-        <h5>content30</h5>
+      <div class="image__product">
+        <img src="https://picsum.photos/286" alt="" />
+        <img src="https://picsum.photos/287" alt="" />
+        <img src="https://picsum.photos/288" alt="" />
       </div>
     </div>
   </body>
