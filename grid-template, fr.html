@@ -10,13 +10,17 @@
         display: grid;
         /* width: 600px; */
         height: 800px;
-        /* fr은 픽셀이나 %같은 것으로 크기를 조절할 때 사용하는 단위이다. */
         gap: 5px;
         grid-template:
-          /* grid-template를 통해 레이아웃의 구조를 알 수 있고 각각 높이값을 보기좋게 줄 수 있다. */
-          [header-start] "header header header header" 1fr [header-end]
+          /* grid-template속성을 통해 레이아웃의 구조를 알 수 있고 각각 높이 값을 좀 더 직관적으로 줄 수 있다. */
+          /* fr은 픽셀이나 %처럼 크기를 조절할 때 사용하는 단위로 비율에 맞게 크기를 조절할 수 있다. */
+          /* 속성 옆에 높이 값을 줄 수 있다. */
+          /* [header-start] "header header header header" 1fr [header-end]
           [content-start] "content content content nav" 2fr [content-end]
-          [footer-start] "footer footer footer footer" 1fr [footer-end] / 1fr 1fr 1fr 1fr;
+          [footer-start] "footer footer footer footer" 1fr [footer-end] / 1fr 1fr 1fr 1fr; */
+          "header header header header" 100px
+          "content content content nav" 2fr
+          "footer footer footer footer" 1fr;
       }
       .header {
         background-color: crimson;

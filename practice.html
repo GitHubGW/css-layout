@@ -9,66 +9,35 @@
       body {
         margin: 0;
         padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
       }
-      .container {
-        /* width: 1200px; */
-        padding: 50px;
-        box-sizing: border-box;
-      }
-      .content {
-        border-top: 1px solid black;
+      .parent {
+        border: 3px solid crimson;
         display: grid;
-        grid-template-columns: 1.5fr 4fr 6fr;
+        grid-template-columns: 100px 200px 300px;
+        grid-template-rows: 50px 100px 150px;
+        gap: 10px;
       }
-      .content:first-child {
-        border-top: none;
-      }
-      .content span {
-        padding: 15px 0px;
-        font-size: 20px;
-      }
-      .content span:nth-child(1) {
-      }
-      .content span:nth-child(2) {
-      }
-      .content span:nth-child(3) {
-      }
-      .first-h2 span {
-        font-size: 12px;
-      }
-      .second-h2 span {
-        text-decoration: underline;
+      .child {
+        background-color: lightblue;
+        font-size: 40px;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Donica Ida is an art director and designer working in editorial, identity, and digital design.</h1>
-      <div class="content"><span>Year</span><span>Client</span><span>Project</span></div>
-      <div class="content"><span>2021</span><span>Cayas</span><span>Identity, website</span></div>
-      <div class="content"><span>2020</span><span>Cayas</span><span>Identity, website</span></div>
-      <div class="content"><span>2019</span><span>Cayas</span><span>Identity, website</span></div>
-      <div class="content"><span>2018</span><span>Cayas</span><span>Identity, website</span></div>
-      <div class="content"><span>2017</span><span>Cayas</span><span>Identity, website</span></div>
-      <div class="content"><span>2016</span><span>Cayas</span><span>Identity, website</span></div>
-      <div class="content"><span>2015</span><span>Cayas</span><span>Identity, website</span></div>
-      <div class="content"><span>2014</span><span>Cayas</span><span>Identity, website</span></div>
-      <div class="content"><span>2013</span><span>Cayas</span><span>Identity, website</span></div>
-      <h2 class="first-h2">
-        <span>Education</span> MFA Design Entrepreneurship, School of Visual Arts; BFA Visual Communication Design, University of Washington.
-        <span>Formerly at</span> HuffPost Highline, Mary Review, Critical Mass, Pentagram. <span>Select clients</span> Airbnb, Condé Nast Traveler, Google
-        Creative Lab, Planned Parenthood.
-      </h2>
-      <h2 class="second-h2">
-        About Donica Ida is a Hawaii-born designer who loves beautiful typography and a well-told story. She is the former Creative Director of HuffPost
-        Highline and Design Director of Mary Review. Donica lives somewhere between Brooklyn and the PNW, and splits her spare time between road trips,
-        <span>hikes</span> and ramen. She is currently contracting at Google Creative Lab while looking for new opportunities*. Connect <span>Email</span>,
-        <span>Instagram</span>, <span>LinkedIn</span>, WorkingNotWorking.
-      </h2>
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">6</div>
+      <div class="child">7</div>
+      <div class="child">8</div>
+      <div class="child">9</div>
+      <div class="child">10</div>
+      <div class="child">11</div>
+      <div class="child">12</div>
     </div>
   </body>
 </html>
