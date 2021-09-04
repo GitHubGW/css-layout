@@ -9,17 +9,18 @@
     <style>
       .grid {
         display: grid;
-        /* grid-template은 repeat()이라는 함수를 가지고 있다. */
+        /* grid에서 repeat()함수를 사용해서 반복 처리를 할 수 있다. */
         /* repeat(반복할 횟수, 크기) */
-        /* grid-template-columns: auto;  auto는 나머지 남는 공간을 다 차지한다. */
-        /* grid-template-columns: auto 200px 100px; 이것의 의미는 첫 번째 컬럼은 auto(남는 공간 다 차지), 두 번째 컬럼은 200px크기, 세 번째 컬럼은 100px의 크기를 준다는 의미이다. */
+        /* grid-template-columns: auto; auto는 나머지 남는 공간을 다 차지한다. */
+        /* grid-template-columns: auto 200px 100px; 첫 번째 컬럼은 auto(남는 공간 다 차지), 두 번째 컬럼은 200px, 세 번째 컬럼은 100px의 크기를 지정한다. */
         /* 마지막 컬럼 크기는 밑에 content content content nav에 맞게 3:1로 크기를 가지게 된다. */
         /* grid-template-columns: repeat(4, 200px); */
         grid-template-columns: auto;
         grid-template-rows: 100px repeat(2, 300px) 100px;
+
         /* grid-template-areas속성은 레이아웃을 디자인해주는 속성으로 grid-template-columns, grid-template-row에서 지정한 속성에 맞춰서 테이블 형태로 디자인이 된다.
-        /* grid-template-areas속성을 쓰려면 아래에서 grid-area를 각각 지정해주면 grid-area에 해당하는 태그들을 가져와서 배치해준다. */
-        /* "content content . nav" 이런식으로 중간에 .을 통해 해당 컨텐츠 부분을 비워둘 수도 있다.ㄴ */
+        /* 아래 각각의 태그들에게 grid-area를 지정해주면 grid-area에 해당하는 태그들을 가져와서 grid-template-areas에 맞게 배치해준다. */
+        /* "content content . nav" 처럼 중간에 .을 통해 해당 컨텐츠 부분을 비워둘 수도 있다. */
         grid-template-areas:
           "header header header header"
           "content content content nav"
@@ -28,7 +29,7 @@
       }
       .header {
         background-color: crimson;
-        /* grid-template-areas속성에 해당되는 grid-area를 매칭시켜준다. (일종의 변수처럼) */
+        /* grid-template-areas속성에 해당되는 grid-area를 매칭시켜준다. */
         grid-area: header;
       }
       .content {
