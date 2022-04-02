@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <title>Document</title>
+    <style>
+      .container {
+        padding: 80px 0;
+      }
+      main {
+        max-width: 1200px;
+        width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        row-gap: 20px;
+      }
+      .section__two-image {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 500px;
+      }
+      .section__two-image div:first-child {
+        overflow: hidden;
+      }
+      .section__two-image div:first-child img {
+        width: 100%;
+        background-position: center center;
+      }
+      .section__two-image div:last-child {
+        display: grid;
+        align-items: center;
+        padding: 30px;
+      }
+      .section__two-image div:last-child h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+      .section__three-image {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .section__three-image div img {
+        width: 100%;
+      }
+      .section__three-image div h1 {
+        text-align: center;
+        font-size: 20px;
+      }
+      .section__two-image--first {
+        background-color: #fbf7f6;
+      }
+      .section__two-image--second {
+        background-color: #f3ede8;
+      }
+      .section__two-image--third {
+        background-color: #dee8e9;
+      }
+      .section__two-image--fourth {
+        background-color: #f9dbbe;
+      }
+
+      .section__six-image {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 400px);
+      }
+      .section__six-image .section__six-image__row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .section__six-image div {
+        height: 100%;
+      }
+      .section__six-image div img {
+        width: 100%;
+        height: 100%;
+      }
+      .section__six-image .section__two-image--third {
+        background-color: #f3ede8;
+        font-size: 30px;
+        display: grid;
+        text-align: center;
+        align-items: center;
+      }
+      .section__six-image__row:nth-child(2) .section__two-image--third {
+        order: -1;
+      }
+      .section__eight-image {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(300px, 1fr));
+        grid-template-rows: repeat(2, 300px);
+        grid-auto-rows: 300px;
+        gap: 0;
+      }
+      .section__eight-image img {
+        width: 100%;
+        cursor: pointer;
+      }
+      .section__eight-image img:hover {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="section__two-image">
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/Like_French_-_Blog_Photo-3_640x640_crop_center.jpg?v=1635790977" alt="" />
+          </div>
+          <div class="section__two-image--first">
+            <h2>Meet Like French, our deep burgundy polish that's as timeless as red lipstick. Statement-making as a solid color or with art, make it your signature red.</h2>
+          </div>
+        </div>
+        <div class="section__two-image">
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/PAINTBOX-UES_0027_copy_640x640_crop_center.jpg?v=1628778916" alt="" />
+          </div>
+          <div class="section__two-image--second">
+            <h2>Book new nails at our Upper East Side studio.</h2>
+          </div>
+        </div>
+        <div class="section__three-image">
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/products/LikeFrenchPDPCarousel2_320x400_crop_center.jpg?v=1634317662" alt="" />
+            <h1>Like French</h1>
+          </div>
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/products/Bothswatches2_320x400_crop_center.png?v=1626231644" alt="" />
+            <h1>Like Canyon</h1>
+          </div>
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/products/gildedvelvetblobs_320x400_crop_center.png?v=1605563796" alt="" />
+            <h1>Like Gilded</h1>
+          </div>
+        </div>
+        <div class="section__two-image">
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/781C2164-4629-4E32-A11D-6CECD6779989_1_201_a_960x960_crop_center.jpg?v=1604946618" alt="" />
+          </div>
+          <div class="section__two-image--third">
+            <h2>Give the gift of the Paintbox experience for a manicure that tells a story.</h2>
+          </div>
+        </div>
+        <div class="section__six-image">
+          <div class="section__six-image__row">
+            <div>
+              <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/blog-3_1280x805_crop_center.jpg?v=1647978413" alt="" />
+            </div>
+            <div class="section__two-image--third">
+              <h2>New and Now: Spring</h2>
+            </div>
+          </div>
+          <div class="section__six-image__row">
+            <div>
+              <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/blog-1_1280x805_crop_center.jpg?v=1646880603" alt="" />
+            </div>
+            <div class="section__two-image--third">
+              <h2>Nails of New York: Eunice Byun</h2>
+            </div>
+          </div>
+          <div class="section__six-image__row">
+            <div>
+              <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/3_1280x805_crop_center.jpg?v=1643326056" alt="" />
+            </div>
+            <div class="section__two-image--third">
+              <h2>Nails of New York: Dr. Marnie Nussbaum</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section__two-image">
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/ezgif.com-gif-maker_20ea7e93-4436-4662-8fac-93b7893f83c5_960x960_crop_center.gif?v=1642130561"
+              alt=""
+            />
+          </div>
+          <div class="section__two-image--fourth">
+            <h2>Follow us on Instagram and get inspired by our tutorials to make the most of your Power Couples.</h2>
+          </div>
+        </div>
+        <div class="section__eight-image">
+          <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/Like_French_Module-3_480x480_crop_top.jpg?v=1636344717" alt="" />
+          <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/Like_French_-_Blog_Photo-3_480x480_crop_top.jpg?v=1635790977" alt="" />
+          <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/PB_Shoot_0621_011A_copy_480x480_crop_top.jpg?v=1636387653" alt="" />
+          <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/Like_French_PDP_Carousel_3_480x480_crop_top.jpg?v=1636387427" alt="" />
+          <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/Like_French_Module-2_480x480_crop_top.jpg?v=1636387427" alt="" />
+          <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/Like_French_-_Blog_Photo_480x480_crop_top.jpg?v=1635790875" alt="" />
+          <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/Like_French_PDP_Carousel_4_480x480_crop_top.jpg?v=1636387427" alt="" />
+          <img src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/120_copy_2_480x480_crop_top.jpg?v=1636387677" alt="" />
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
