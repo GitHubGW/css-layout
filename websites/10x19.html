@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr minmax(auto, 1050px) 1fr;
+      }
+
+      .left_column ul {
+        display: grid;
+        grid-template-rows: 1fr repeat(5, 2fr) 1fr;
+        height: 100%;
+        background-color: burlywood;
+        row-gap: 1px;
+        border-right: 1px solid burlywood;
+      }
+      .left_column ul li {
+        background-color: white;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: burlywood;
+        cursor: auto;
+      }
+      .left_column ul li:not(:last-child):hover {
+        background-color: burlywood;
+        color: white;
+        cursor: pointer;
+      }
+
+      .middle_column {
+        display: grid;
+        grid-template-rows: 1fr 10fr 1fr;
+        background-color: burlywood;
+        row-gap: 1px;
+      }
+      .middle_column div {
+        background-color: white;
+      }
+      .middle_column .middle_image {
+        background: url("http://10x19.co/staging/wp-content/uploads/2019/12/Luor_4-768x768.jpg") no-repeat center center;
+        background-size: cover;
+      }
+      .middle_column .description {
+        color: burlywood;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: normal;
+        white-space: nowrap;
+        display: grid;
+        align-items: center;
+        overflow: hidden;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .middle_column .description span {
+        transform: translateY(200px);
+        animation: description 20s linear infinite alternate;
+      }
+
+      .right_column ul {
+        display: grid;
+        grid-template-rows: 1fr repeat(5, 2fr) 1fr;
+        height: 100%;
+        background-color: burlywood;
+        row-gap: 1px;
+        border-left: 1px solid burlywood;
+      }
+      .right_column ul li {
+        background-color: white;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: burlywood;
+        cursor: auto;
+      }
+      .right_column ul li:not(:last-child):hover {
+        background-color: burlywood;
+        color: white;
+        cursor: pointer;
+      }
+
+      /* 애니메이션 */
+      @keyframes description {
+        0% {
+          transform: translate(150px, 150px);
+        }
+        5% {
+          transform: translate(0px, 0px);
+        }
+        100% {
+          transform: translateX(-2000px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left_column">
+        <ul>
+          <li>10x19</li>
+          <li>#10</li>
+          <li>#9</li>
+          <li>#8</li>
+          <li>#7</li>
+          <li>#6</li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="middle_column">
+        <div></div>
+        <div class="middle_image"></div>
+        <div class="description">
+          <span
+            >Thirty-four artists visually interpret and countdown their favorite albums of 2019 + Thirty-four artists visually interpret and countdown their favorite albums of
+            2019</span
+          >
+        </div>
+      </div>
+      <div class="right_column">
+        <ul>
+          <li>MENU</li>
+          <li>#5</li>
+          <li>#4</li>
+          <li>#3</li>
+          <li>#2</li>
+          <li>#1</li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
