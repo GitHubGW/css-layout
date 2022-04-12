@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        display: grid;
+        justify-content: center;
+      }
+      .container {
+        width: 1200px;
+        max-width: 1200px;
+        margin-top: 80px;
+      }
+      .news {
+        text-align: center;
+        padding: 50px 60px;
+      }
+      .news h2 {
+        font-size: 50px;
+        font-weight: bold;
+      }
+      .news p {
+        font-size: 35px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+      }
+      .news button {
+        font-size: 20px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      .info {
+        padding: 20px;
+      }
+      .info_item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 0;
+        gap: 30px;
+        border-top: 1px solid lightgray;
+      }
+      .info_item div h2 {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .info_item div p {
+        font-size: 40px;
+        margin: 50px 0;
+      }
+      .info_item div button {
+        font-size: 20px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid lightgray;
+        border-radius: 50px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      .info_item img {
+        width: 100%;
+      }
+      .essay {
+        border-top: 1px solid lightgray;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding-top: 30px;
+        margin-top: 50px;
+      }
+      .essay div h2 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      .essay div img {
+        width: 100%;
+      }
+      .essay div p {
+        font-size: 25px;
+        margin: 30px 0;
+      }
+      .essay div button {
+        font-size: 20px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid lightgray;
+        border-radius: 50px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      .career {
+        border-top: 1px solid lightgray;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px 0;
+        column-gap: 10px;
+        margin-top: 50px;
+      }
+      .career div h2 {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .career div p {
+        font-size: 25px;
+        margin: 50px 0;
+      }
+      .career div button {
+        font-size: 20px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid lightgray;
+        border-radius: 50px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <main>
+          <img src="https://schwartzmedia.com.au/assets/images/SM_3.png" />
+        </main>
+        <div class="news">
+          <h2>News that lasts.</h2>
+          <p>
+            Schwartz Media publishes intelligent news and current affairs that breaks the 24-hour news cycle. We offer a nuanced examination of Australia and the world, focused on
+            fresh insight and literary expression. Our audience reads to know, not just to agree. We invest in long-form journalism where the issues demand it, providing writing of
+            a quality that makes difficult topics clear. Schwartz Media publishes Australia’s most respected writers across The Saturday Paper, The Monthly magazine and the daily
+            podcast 7am, alongside our sister publications, Quarterly Essay and Australian Foreign Affairs.
+          </p>
+          <button>View our Companies</button>
+        </div>
+        <div class="info">
+          <div class="info_item">
+            <div>
+              <h2>Journalism</h2>
+              <p>Our journalists create in-depth, independent, original public interest reporting, focusing on storytelling and insight.</p>
+              <button>Learn more</button>
+            </div>
+            <img src="https://schwartzmedia.com.au/media/pages/home/944882388-1630543744/sm-4-600x.png" />
+          </div>
+          <div class="info_item">
+            <img src="https://schwartzmedia.com.au/media/pages/titles/the-monthly/4285247561-1631144372/tm-black-white-600x400.png" />
+            <div>
+              <h2>The Monthly</h2>
+              <p>The Monthly publishes long-form journalism from the nation's leading writers and thinkers, covering Australian politics, culture and ideas.</p>
+              <button>Learn more</button>
+            </div>
+          </div>
+          <div class="info_item">
+            <div>
+              <h2>Journalism</h2>
+              <p>Our journalists create in-depth, independent, original public interest reporting, focusing on storytelling and insight.</p>
+              <button>Learn more</button>
+            </div>
+            <img src="https://schwartzmedia.com.au/media/pages/titles/7am/3652224334-1587514798/7am-device-spotify-600x400.jpg" />
+          </div>
+          <div class="info_item">
+            <img src="https://schwartzmedia.com.au/media/pages/titles/the-saturday-paper/2675741540-1631144305/tsp-2-600x400.png" />
+            <div>
+              <h2>7am</h2>
+              <p>7am is a daily news podcast that tells the big stories through in-depth interviews and sharp analysis.</p>
+              <button>Learn more</button>
+            </div>
+          </div>
+        </div>
+        <div class="essay">
+          <div>
+            <h2>Quarterly Essay</h2>
+            <img src="https://schwartzmedia.com.au/media/pages/titles/quarterly-essay/1843019454-1587514798/2019-schwartz-offices-17-600x400.jpg" />
+            <p>Quarterly Essay is the leading agenda-setting journal of politics and culture in Australia.</p>
+            <button>Learn more</button>
+          </div>
+          <div>
+            <h2>Australian Foreign Affairs</h2>
+            <img src="https://schwartzmedia.com.au/media/pages/titles/australian-foreign-affairs/387608030-1587514798/2019-schwartz-offices-15-600x400.jpg" />
+            <p>Australian Foreign Affairs is the country’s leading foreign affairs journal.</p>
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="essay">
+          <div>
+            <h2>Shop</h2>
+            <img src="https://schwartzmedia.com.au/media/pages/titles/quarterly-essay/1843019454-1587514798/2019-schwartz-offices-17-600x400.jpg" />
+            <p>In collaboration with Alpha60, The Saturday Paper and The Monthly bring you a tote bag.</p>
+            <button>Shop now</button>
+          </div>
+          <div>
+            <h2>Give a Gift</h2>
+            <img src="https://schwartzmedia.com.au/media/pages/titles/australian-foreign-affairs/387608030-1587514798/2019-schwartz-offices-15-600x400.jpg" />
+            <p>Give The Saturday Paper or The Monthly as a gift.</p>
+            <button>Gift</button>
+          </div>
+        </div>
+        <div class="career">
+          <div>
+            <h2>Careers</h2>
+            <p>Work at the country’s leading independent publisher.</p>
+            <button>Learn more</button>
+          </div>
+          <div>
+            <h2>News</h2>
+            <p>Keep in touch with what is happening at Schwartz Media.</p>
+            <button>Learn more</button>
+          </div>
+          <div>
+            <h2>Contact</h2>
+            <p>Get in touch with our editorial and advertising teams.</p>
+            <button>Learn more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
